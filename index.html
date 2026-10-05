@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hermes rclone backup</title>
+  <!-- Если Google попросит подтвердить домен тегом — вставьте сюда его meta-тег:
+       <meta name="google-site-verification" content="..."> -->
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px;
+           margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    .sub { color: #666; margin-top: 0; }
+    code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Hermes rclone backup</h1>
+  <p class="sub">Personal, single-user command-line backup tooling (rclone wrapper).</p>
+
+  <p>
+    This application is a private automation tool. It runs on its owner's own server and uses
+    <code>rclone</code> as a client for the Google Drive API to upload and rotate compressed
+    (xz) snapshots of the owner's SQLite databases into the owner's own Google Drive account.
+  </p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Creates local snapshots of the owner's database files and compresses them.</li>
+    <li>Uploads them into a folder created by the tool in the owner's own Google Drive
+        (<code>hermes-db-backups/</code>).</li>
+    <li>Deletes backups older than the retention period (7 days) to free space.</li>
+    <li>Nothing else: no reading of unrelated files, no analytics, no telemetry.</li>
+  </ul>
+
+  <h2>Who uses it</h2>
+  <ul>
+    <li>A single user — the owner of the Google account and of the server. There are no other
+        users, no sign-up, no multi-tenant access.</li>
+    <li>The tool is non-commercial and is not distributed as a service.</li>
+  </ul>
+
+  <p><a href="privacy.html">Privacy Policy</a></p>
+
+  <p>Contact: <a href="mailto:DanilSeleznyov@users.noreply.github.com">DanilSeleznyov@users.noreply.github.com</a></p>
+</body>
+</html>

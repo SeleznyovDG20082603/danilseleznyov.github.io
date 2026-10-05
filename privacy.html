@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Hermes rclone backup</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 720px;
+           margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 19px; margin-top: 28px; }
+    .sub { color: #666; margin-top: 0; }
+    code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Hermes rclone backup</h1>
+  <p class="sub">Last updated: 2026-10-05</p>
+
+  <p>
+    <strong>Hermes rclone backup</strong> ("the app") is a personal, single-user command-line
+    backup tool. This policy describes how it accesses, uses, stores and shares Google user data.
+  </p>
+
+  <h2>1. Google user data the app accesses</h2>
+  <ul>
+    <li>The app authenticates with the owner's own Google account using OAuth 2.0 and requests a
+        single scope: <code>https://www.googleapis.com/auth/drive</code>.</li>
+    <li>Access is used only to create, list, download and delete backup archives inside the folder
+        the app manages in that same account (<code>hermes-db-backups/</code>).</li>
+    <li>The app does not read, modify or delete any other files in Google Drive, and does not use
+        Gmail, Calendar, Contacts, Photos or any other Google service.</li>
+  </ul>
+
+  <h2>2. How the data is used</h2>
+  <ul>
+    <li>Only for the single purpose of storing and rotating the owner's own database backups.</li>
+    <li>No profiling, no advertising, no analytics, no automated decision-making.</li>
+    <li>No machine learning or AI model training on Google user data.</li>
+  </ul>
+
+  <h2>3. Storage and retention</h2>
+  <ul>
+    <li>Backup archives are stored in the owner's own Google Drive account.</li>
+    <li>No copy of Google user data is transferred to any other party or service.</li>
+    <li>Archives older than 7 days are deleted automatically (rotated) to free space.</li>
+  </ul>
+
+  <h2>4. Sharing</h2>
+  <ul>
+    <li>The app shares no Google user data with third parties.</li>
+    <li>Data is not sold, rented or transferred for advertising or any other purpose.</li>
+    <li>No humans read the data; access is limited to the owner of the account.</li>
+  </ul>
+
+  <h2>5. Security</h2>
+  <ul>
+    <li>OAuth 2.0 credentials are stored on the owner's own server, protected by file-system
+        permissions and not shared publicly.</li>
+    <li>Access can be revoked at any time at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>6. Limited Use</h2>
+  <p>
+    The app's use and transfer of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, including the Limited Use requirements.
+  </p>
+
+  <h2>7. Contact</h2>
+  <p>
+    Questions about this policy:
+    <a href="mailto:DanilSeleznyov@users.noreply.github.com">DanilSeleznyov@users.noreply.github.com</a>
+  </p>
+
+  <p><a href="index.html">← Back to home page</a></p>
+</body>
+</html>
